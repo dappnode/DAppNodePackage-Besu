@@ -1,3 +1,16 @@
+ "links": {
+    "endpoint": "http://arbitrum-node.arbitrum.public.dappnode:8547",
+    "homepage": "https://github.com/OffchainLabs/arbitrum",
+    "docs": "https://developer.offchainlabs.com/docs/running_node"
+  },
+  "bugs": {
+    "url": "https://github.com/Nabsku/DAppNodePackage-Arbitrum/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Nabsku/DAppNodePackage-Arbitrum.git"
+  },
+
 {
   "name": "besu.public.dappnode.eth",
   "version": "22.4.0",
@@ -11,8 +24,17 @@
   "contributors": ["Nabsku <thenabsku@gmail.com> (https://github.com/Nabsku)"],
   "categories": ["Developer tools"],
   "architectures": ["linux/amd64"], 
-  "links": {
-    "homepage": "https://your-project-homepage-or-docs.io"
+   "links": {
+    "endpoint": "http://besu.public.dappnode:8545",
+    "homepage": "https://github.com/hyperledger/besu",
+    "docs": "https://besu.hyperledger.org/en/stable/"
+  },
+  "bugs": {
+    "url": "https://github.com/Nabsku/DAppNodePackage-Besu/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Nabsku/DAppNodePackage-Besu"
   },
   "license": "Apache 2"
 }
