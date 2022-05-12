@@ -1,0 +1,18 @@
+{
+  "name": "besu.public.dappnode.eth",
+  "version": "22.4.0",
+  "description": "An enterprise-grade Java-based, Apache 2.0 licensed Ethereum client (running with BONSAI storage format)",
+  "shortDescription": "Java-based Ethereum Client",
+  "upstreamVersion": "22.4.0",
+  "upstreamRepo": "hyperledger/besu",
+  "upstreamArg": "UPSTREAM_VERSION",
+  "type": "service",
+  "author": "Nabsku <thenabsku@gmail.com> (https://github.com/Nabsku)",  
+  "contributors": ["Nabsku <thenabsku@gmail.com> (https://github.com/Nabsku)"],
+  "categories": ["Developer tools"],
+  "architectures": ["linux/amd64"], 
+  "links": {
+    "homepage": "https://your-project-homepage-or-docs.io"
+  },
+  "license": "Apache 2"
+}

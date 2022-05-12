@@ -1,0 +1,10 @@
+ARG UPSTREAM_VERSION
+
+FROM hyperledger/besu:${UPSTREAM_VERSION}
+
+USER root
+RUN mkdir /var/lib/besu
+RUN chown -R besu:besu /var/lib/besu
+USER besu
+
+ENTRYPOINT besu --rpc-http-host 0.0.0.0 --rpc-http-enabled --data-storage-format=BONSAI --data-path=/var/lib/besu $EXTRA_OPTS
