@@ -7,6 +7,7 @@ services:
         UPSTREAM_VERSION: 22.4.0
     ports:
       - 30303/tcp
+      - 30303/udp
     volumes:
       - "data:/var/lib/besu"
     environment:
