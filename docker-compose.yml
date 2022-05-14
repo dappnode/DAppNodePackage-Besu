@@ -11,6 +11,7 @@ services:
       - "data:/var/lib/besu"
     environment:
       EXTRA_OPTS: ""
+      STORAGE_FORMAT: ""
     image: "besu.public.dappnode.eth:22.4.0"
     restart: unless-stopped
 volumes:

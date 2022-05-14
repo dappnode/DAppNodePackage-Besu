@@ -1,0 +1,18 @@
+version: "2"
+fields:
+  - title: Storage Format
+    id: storage_format
+    description: >-
+      Besu can use one of two storage formats, Forest of Tries or Bonsai Tries. 
+
+      You can read about the differences [here](https://besu.hyperledger.org/en/stable/Concepts/Data-Storage-Formats). 
+
+      One major downside of using Bonsai Tries (as of now) is that syncing takes longer since "fast sync" does not work with it. 
+    target:
+      type: environment
+      name: STORAGE_FORMAT
+      service: besu.public.dappnode.eth
+    enum:
+      - BONSAI
+      - FOREST
+    required: true
