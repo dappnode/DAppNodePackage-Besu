@@ -16,3 +16,27 @@ fields:
       - BONSAI
       - FOREST
     required: true
+  - title: Enable WebSocket API
+    id: enable_ws
+    description: >-
+      You can enable or disable the WebSocket API here, if needed.
+    target:
+      type: environment
+      name: WS_ENABLED
+      service: besu.public.dappnode.eth
+    enum:
+      - "true"
+      - "false"
+    required: true
+  - title: Enable JSON-RPC API
+    id: enable_rpc
+    description: >-
+      You can enable or disable the JSON-RPC API here, if needed.
+    target:
+      type: environment
+      name: RPC_ENABLED
+      service: besu.public.dappnode.eth
+    enum:
+      - "true"
+      - "false"
+    required: true

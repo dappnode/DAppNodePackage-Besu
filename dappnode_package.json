@@ -1,9 +1,9 @@
 {
   "name": "besu.public.dappnode.eth",
-  "version": "22.4.0",
+  "version": "22.4.2",
   "description": "An enterprise-grade Java-based, Apache 2.0 licensed Ethereum client",
   "shortDescription": "Java-based Ethereum Client",
-  "upstreamVersion": "22.4.0",
+  "upstreamVersion": "22.4.2",
   "upstreamRepo": "hyperledger/besu",
   "upstreamArg": "UPSTREAM_VERSION",
   "type": "service",
@@ -13,7 +13,7 @@
   "architectures": ["linux/amd64"],
   "chain": "ethereum",
   "links": {
-    "endpoint": "http://besu.public.dappnode:8545",
+    "endpoint": "besu.public.dappnode:8545",
     "homepage": "https://github.com/hyperledger/besu",
     "docs": "https://besu.hyperledger.org/en/stable/"
   },
