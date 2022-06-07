@@ -1,6 +1,6 @@
 {
   "name": "besu.public.dappnode.eth",
-  "version": "22.4.2",
+  "version": "1.0.0",
   "description": "An enterprise-grade Java-based, Apache 2.0 licensed Ethereum client",
   "shortDescription": "Java-based Ethereum Client",
   "upstreamVersion": "22.4.2",
