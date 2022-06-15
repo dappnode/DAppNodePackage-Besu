@@ -4,11 +4,12 @@ This package uses the BONSAI storage format which provides better read and write
 
 # Used Ports
 
-| Port | Used For |
-| ---- | -------- |
-| 8545 | JSON-RPC |
-| 8546 | WebSocket|
-| 30303| Peer Traffic|
+| Port | Used For | Exposed |
+| ---- | -------- | ------- |
+| 8545 | JSON-RPC | No      |
+| 8546 | WebSocket| No      |
+| 9545 | Metrics  | No      |
+| 30303| Peer Traffic| Yes  |
 
 # General
 
