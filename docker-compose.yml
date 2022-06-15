@@ -15,6 +15,7 @@ services:
       STORAGE_FORMAT: ""
       WS_ENABLED: "true"
       RPC_ENABLED: "true"
+      BESU_OPTS: ""
     image: "besu.public.dappnode.eth:22.4.2"
     restart: unless-stopped
 volumes:
