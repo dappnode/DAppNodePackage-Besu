@@ -3,7 +3,9 @@
 You can limit the resource usage (eg. RAM) in BESU_OPTS in the Advanced Configuration. Just pass it the standard JVM memory arguments. 
 
 Looks like this:
-    -Xms8G -Xmx12G
+```
+-Xms8G -Xmx12G
+```
 
 This package by default uses the newer BONSAI storage structure. You can switch it to the older FOREST one in the Settings. Does require a resync and potentially a volume removal. 
 # Used Ports
