@@ -13,6 +13,7 @@ services:
     environment:
       EXTRA_OPTS: ""
       STORAGE_FORMAT: ""
+      SYNC_MODE: ""
       WS_ENABLED: "true"
       RPC_ENABLED: "true"
       BESU_OPTS: ""

@@ -16,6 +16,21 @@ fields:
       - BONSAI
       - FOREST
     required: true
+  - title: Sync Mode
+    id: sync_mode
+    description: >-
+      Besu can use one of three sync modes, FULL (slow, archive node), FAST (fast, full node) or X_SNAP (fastest, experimental). 
+
+      You can read about the differences [here](https://besu.hyperledger.org/en/stable/Reference/CLI/CLI-Syntax/#sync-mode). 
+    target:
+      type: environment
+      name: SYNC_MODE
+      service: besu.public.dappnode.eth
+    enum:
+      - FAST
+      - FULL
+      - X_SNAP
+    required: true
   - title: Enable WebSocket API
     id: enable_ws
     description: >-
