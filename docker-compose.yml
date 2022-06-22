@@ -16,7 +16,7 @@ services:
       WS_ENABLED: "true"
       RPC_ENABLED: "true"
       BESU_OPTS: ""
-    image: "besu.public.dappnode.eth:22.4.2"
+    image: "besu.public.dappnode.eth:1.0.0"
     restart: unless-stopped
 volumes:
   data: {}
