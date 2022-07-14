@@ -14,10 +14,12 @@ services:
       EXTRA_OPTS: ""
       STORAGE_FORMAT: ""
       SYNC_MODE: ""
+      CONFIG_MODE: normal
       WS_ENABLED: "true"
       RPC_ENABLED: "true"
+      MAX_HTTP_CONNECTIONS: "100"
       BESU_OPTS: ""
-    image: "besu.public.dappnode.eth:1.0.0"
+    image: "besu.public.dappnode.eth:1.0.1"
     restart: unless-stopped
 volumes:
   data: {}

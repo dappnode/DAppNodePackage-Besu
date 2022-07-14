@@ -1,5 +1,17 @@
 version: "2"
 fields:
+  - title: Config mode
+    id: config_mode
+    description: >-
+      You must choose a config method. Most users should choose
+      "normal" mode, but more advanced users will be able to customize the
+      installation of Besu and its environment variables.
+    target:
+      type: environment
+      name: CONFIG_MODE
+    enum:
+      - "normal"
+      - "advanced"
   - title: Storage Format
     id: storage_format
     description: >-
@@ -55,3 +67,12 @@ fields:
       - "true"
       - "false"
     required: true
+  - title: Max HTTP RPC connections
+    id: max_rpc_connections_http
+    description: >- 
+      To prevent flooding of the node, there is a sensible max connections limit (raised to 100 from default 80). You can alter this variable here.
+    target:
+      type: environment
+      name: MAX_HTTP_CONNECTIONS
+      service: besu.public.dappnode.eth
+    if: { "config_mode": { "enum": ["advanced"] } }
