@@ -4,7 +4,7 @@ services:
     build:
       context: build
       args:
-        UPSTREAM_VERSION: 22.4.4
+        UPSTREAM_VERSION: 22.7.0
     ports:
       - 30303/tcp
       - 30303/udp
@@ -12,14 +12,15 @@ services:
       - "data:/var/lib/besu"
     environment:
       EXTRA_OPTS: ""
-      STORAGE_FORMAT: ""
-      SYNC_MODE: ""
+      STORAGE_FORMAT: BONSAI
+      SYNC_MODE: FAST
       CONFIG_MODE: normal
+      ENGINE_API_ENABLED: "true"
       WS_ENABLED: "true"
       RPC_ENABLED: "true"
-      MAX_HTTP_CONNECTIONS: "100"
+      MAX_HTTP_CONNECTIONS: "170"
       BESU_OPTS: ""
-    image: "besu.public.dappnode.eth:1.0.1"
+    image: "besu.public.dappnode.eth:1.1.0"
     restart: unless-stopped
 volumes:
   data: {}
