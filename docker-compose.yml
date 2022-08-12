@@ -6,8 +6,8 @@ services:
       args:
         UPSTREAM_VERSION: 22.7.0
     ports:
-      - 30303/tcp
-      - 30303/udp
+      - "30414:30414/tcp"
+      - "30414:30414/udp"
     volumes:
       - "data:/var/lib/besu"
     environment:
@@ -19,8 +19,9 @@ services:
       WS_ENABLED: "true"
       RPC_ENABLED: "true"
       MAX_HTTP_CONNECTIONS: "170"
+      P2P_PORT: "30414"
       BESU_OPTS: ""
-    image: "besu.public.dappnode.eth:1.1.0"
+    image: "besu.public.dappnode.eth:1.1.1"
     restart: unless-stopped
 volumes:
   data: {}

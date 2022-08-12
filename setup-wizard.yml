@@ -9,6 +9,7 @@ fields:
     target:
       type: environment
       name: CONFIG_MODE
+      service: besu.public.dappnode.eth
     enum:
       - "normal"
       - "advanced"
