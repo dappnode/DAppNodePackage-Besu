@@ -79,7 +79,7 @@ fields:
   - title: Enable Engine API
     id: enable_engine_api
     description: >-
-      You can enable or disable the Engine API (the interface that communicates with your CL/Eth2 Client) here.  
+      You can enable or disable the Engine API (the interface that communicates with your Consensus Layer Client) here.  
         
       It is not recommend that you turn this off **after the merge** if you are an active staker because you will stop attesting and proposing if the interface is down. 
     target:

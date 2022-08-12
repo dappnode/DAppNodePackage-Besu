@@ -16,11 +16,11 @@ This package by default uses the newer BONSAI storage structure. You can switch 
 | 8546 | WebSocket| No      |
 | 8551 | Engine API | No      |
 | 9545 | Metrics  | No      |
-| 30303| Peer Traffic| Yes  |
+| 30414 | Peer Traffic| Yes  |
 
 # General
 
-This DAppNode package uses the Besu Execution Client (Eth1). 
+This DAppNode package uses the Besu Execution Client. 
 
 # License
 
