@@ -9,6 +9,20 @@
   "type": "service",
   "author": "Nabsku <thenabsku@gmail.com> (https://github.com/Nabsku)",
   "contributors": ["Nabsku <thenabsku@gmail.com> (https://github.com/Nabsku)"],
+  "exposable": [
+      {
+        "name": "Besu JSON RPC",
+        "description": "JSON RPC endpoint for Besu",
+        "serviceName": "besu",
+        "port": 8545
+      },
+      {
+        "name": "Besu JSON RPC (WS)",
+        "description": "JSON RPC WebSocket endpoint for Besu",
+        "serviceName": "besu",
+        "port": 8546
+      }
+    ],
   "categories": ["Developer tools"],
   "architectures": ["linux/amd64"],
   "chain": "ethereum",
