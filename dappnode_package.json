@@ -9,7 +9,7 @@
   "type": "service",
   "author": "Nabsku <thenabsku@gmail.com> (https://github.com/Nabsku)",
   "contributors": ["Nabsku <thenabsku@gmail.com> (https://github.com/Nabsku)"],
-  "categories": ["Developer tools", "Blockchain"],
+  "categories": ["Developer tools"],
   "architectures": ["linux/amd64"],
   "chain": "ethereum",
   "links": {
