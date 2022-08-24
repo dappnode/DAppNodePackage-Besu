@@ -6,10 +6,12 @@ USER root
 RUN mkdir /var/lib/besu
 
 COPY jwtsecret.hex /jwtsecret
-COPY entrypoint.sh /var/lib/besu/entrypoint.sh
+COPY entrypoint.sh /usr/bin/entrypoint.sh
 
-RUN chown -R root:root /var/lib/besu && chmod 777 /var/lib/besu/entrypoint.sh && chown -R root:root /jwtsecret && chmod 666 /jwtsecret
+RUN chown -R besu:besu /var/lib/besu && chmod 777 /usr/bin/entrypoint.sh && chown -R besu:besu /jwtsecret && chmod 666 /jwtsecret
 
 ENV BESU_OPTS=$BESU_OPTS
 
-ENTRYPOINT [ "/var/lib/besu/entrypoint.sh" ]
+USER besu
+
+ENTRYPOINT [ "entrypoint.sh" ]
