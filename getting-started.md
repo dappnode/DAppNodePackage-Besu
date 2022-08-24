@@ -1,6 +1,6 @@
 Besu (Execution Client)
 
-Mainnet is now ready for the merge!
+Besu is now ready for the merge!
 
 There are now two RPC APIs in Execution Clients:
 
