@@ -12,6 +12,20 @@
   "categories": ["Developer tools"],
   "architectures": ["linux/amd64"],
   "chain": "ethereum",
+  "exposable": [
+    {
+      "name": "Besu JSON RPC",
+      "description": "JSON RPC endpoint for Besu",
+      "serviceName": "besu",
+      "port": 8545
+    },
+    {
+      "name": "Besu JSON RPC (WS)",
+      "description": "JSON RPC WebSocket endpoint for Besu",
+      "serviceName": "besu",
+      "port": 8546
+    }
+  ],
   "links": {
     "endpoint": "besu.public.dappnode:8545",
     "homepage": "https://github.com/hyperledger/besu",
