@@ -1,14 +1,17 @@
 {
-  "name": "besu.public.dappnode.eth",
+  "name": "besu.dnp.dappnode.eth",
   "version": "1.1.1",
-  "description": "An enterprise-grade Java-based, Apache 2.0 licensed Ethereum client",
+  "description": "An enterprise-grade Java-based, Apache 2.0 licensed Ethereum Execution Layer Client",
   "shortDescription": "Java-based Ethereum Client",
   "upstreamVersion": "22.7.0",
   "upstreamRepo": "hyperledger/besu",
   "upstreamArg": "UPSTREAM_VERSION",
   "type": "service",
   "author": "Nabsku <thenabsku@gmail.com> (https://github.com/Nabsku)",
-  "contributors": ["Nabsku <thenabsku@gmail.com> (https://github.com/Nabsku)"],
+  "contributors": [
+    "Nabsku <thenabsku@gmail.com> (https://github.com/Nabsku)",
+    "Voss <alex@visnovaventures.com> (https://github.com/alexpeterson91)" 
+  ],
   "exposable": [
       {
         "name": "Besu JSON RPC",
@@ -23,20 +26,20 @@
         "port": 8546
       }
     ],
-  "categories": ["Developer tools"],
+  "categories": ["Blockchain"],
   "architectures": ["linux/amd64"],
   "chain": "ethereum",
   "links": {
-    "endpoint": "besu.public.dappnode:8545",
+    "endpoint": "besu.dappnode:8545",
     "homepage": "https://github.com/hyperledger/besu",
     "docs": "https://besu.hyperledger.org/en/stable/"
   },
   "bugs": {
-    "url": "https://github.com/Nabsku/DAppNodePackage-Besu/issues"
+    "url": "https://github.com/dappnode/DAppNodePackage-Besu/issues"
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/Nabsku/DAppNodePackage-Besu"
+    "url": "https://github.com/dappnode/DAppNodePackage-Besu"
   },
   "license": "Apache-2.0"
 }
