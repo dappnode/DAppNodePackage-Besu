@@ -64,32 +64,6 @@ fields:
       - "true"
       - "false"
     required: true
-  - title: Enable JSON-RPC API
-    id: enable_rpc
-    description: >-
-      You can enable or disable the JSON-RPC API here, if needed.
-    target:
-      type: environment
-      name: RPC_ENABLED
-      service: node
-    enum:
-      - "true"
-      - "false"
-    required: true
-  - title: Enable Engine API
-    id: enable_engine_api
-    description: >-
-      You can enable or disable the Engine API (the interface that communicates with your Consensus Layer Client) here.  
-        
-      It is not recommend that you turn this off **after the merge** if you are an active staker because you will stop attesting and proposing if the interface is down.
-    target:
-      type: environment
-      name: ENGINE_API_ENABLED
-      service: besu.public.dappnode.eth
-    enum:
-      - "true"
-      - "false"
-    required: true
   - title: Max HTTP RPC connections
     id: max_rpc_connections_http
     description: >-

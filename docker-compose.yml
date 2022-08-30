@@ -15,13 +15,11 @@ services:
       STORAGE_FORMAT: BONSAI
       SYNC_MODE: FAST
       CONFIG_MODE: normal
-      ENGINE_API_ENABLED: "true"
       WS_ENABLED: "true"
-      RPC_ENABLED: "true"
       MAX_HTTP_CONNECTIONS: "170"
       P2P_PORT: "30414"
       BESU_OPTS: ""
-    image: "besu.dnp.dappnode.eth:1.2.1"
+    image: "node.besu.dnp.dappnode.eth:1.2.1"
     restart: unless-stopped
 volumes:
   data: {}
