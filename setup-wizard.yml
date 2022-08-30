@@ -9,7 +9,7 @@ fields:
     target:
       type: environment
       name: CONFIG_MODE
-      service: besu.public.dappnode.eth
+      service: node
     enum:
       - "normal"
       - "advanced"
@@ -17,16 +17,16 @@ fields:
     id: storage_format
     description: >-
       Besu can use one of two storage formats, Forest of Tries or Bonsai Tries. 
-  
+
 
       You can read about the differences [here](https://besu.hyperledger.org/en/stable/Concepts/Data-Storage-Formats). 
-  
+
 
       Standard is BONSAI.
     target:
       type: environment
       name: STORAGE_FORMAT
-      service: besu.public.dappnode.eth
+      service: node
     enum:
       - BONSAI
       - FOREST
@@ -36,16 +36,16 @@ fields:
     id: sync_mode
     description: >-
       Besu can use one of three sync modes, FULL (slow, archive node), FAST (fast, full node) or X_SNAP (fastest, experimental and works with BONSAI). 
-  
+
 
       You can read about the differences [here](https://besu.hyperledger.org/en/stable/Reference/CLI/CLI-Syntax/#sync-mode). 
-  
 
-      Standard is FULL. 
+
+      Standard is FULL.
     target:
       type: environment
       name: SYNC_MODE
-      service: besu.public.dappnode.eth
+      service: node
     enum:
       - FAST
       - FULL
@@ -59,7 +59,7 @@ fields:
     target:
       type: environment
       name: WS_ENABLED
-      service: besu.public.dappnode.eth
+      service: node
     enum:
       - "true"
       - "false"
@@ -71,7 +71,7 @@ fields:
     target:
       type: environment
       name: RPC_ENABLED
-      service: besu.public.dappnode.eth
+      service: node
     enum:
       - "true"
       - "false"
@@ -81,7 +81,7 @@ fields:
     description: >-
       You can enable or disable the Engine API (the interface that communicates with your Consensus Layer Client) here.  
         
-      It is not recommend that you turn this off **after the merge** if you are an active staker because you will stop attesting and proposing if the interface is down. 
+      It is not recommend that you turn this off **after the merge** if you are an active staker because you will stop attesting and proposing if the interface is down.
     target:
       type: environment
       name: ENGINE_API_ENABLED
@@ -92,7 +92,7 @@ fields:
     required: true
   - title: Max HTTP RPC connections
     id: max_rpc_connections_http
-    description: >- 
+    description: >-
       To prevent flooding of the node, there is a sensible max connections limit. You can alter this variable here.
     target:
       type: environment

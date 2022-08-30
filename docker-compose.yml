@@ -1,6 +1,6 @@
 version: "3.5"
 services:
-  besu.dnp.dappnode.eth:
+  node:
     build:
       context: build
       args:
