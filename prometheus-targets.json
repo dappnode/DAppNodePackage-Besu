@@ -2,7 +2,7 @@
     {
         "labels": {
             "package": "besu.dnp.dappnode.eth",
-            "service": "besu.dnp.dappnode",
+            "service": "node.besu",
             "__metrics_path__": "/metrics"
         },
         "targets": [
