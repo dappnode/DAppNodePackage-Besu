@@ -3,17 +3,17 @@
   "version": "1.2.1",
   "description": "An enterprise-grade Java-based, Apache 2.0 licensed Ethereum Execution Layer client",
   "shortDescription": "Java-based Ethereum Client",
-  "upstreamVersion": "22.7.1",
+  "upstreamVersion": "22.7.2",
   "upstreamRepo": "hyperledger/besu",
   "upstreamArg": "UPSTREAM_VERSION",
   "type": "service",
   "author": "Nabsku <thenabsku@gmail.com> (https://github.com/Nabsku)",
   "contributors": [
     "Nabsku <thenabsku@gmail.com> (https://github.com/Nabsku)",
-    "Voss <alex@visnovaventures.com> (https://github/alexpeterson91)"  
+    "Voss <alex@visnovaventures.com> (https://github/alexpeterson91)"
   ],
   "categories": ["Blockchain"],
-  "architectures": ["linux/amd64","linux/arm64"],
+  "architectures": ["linux/amd64", "linux/arm64"],
   "chain": "ethereum",
   "exposable": [
     {
