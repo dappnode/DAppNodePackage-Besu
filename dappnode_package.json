@@ -30,8 +30,8 @@
     }
   ],
   "links": {
-    "endpoint": "besu.dappnode:8545",
-    "apiEngine": "besu.dapppnode:8551",
+    "endpoint": "http://besu.dappnode:8545",
+    "apiEngine": "http://besu.dapppnode:8551",
     "homepage": "https://github.com/hyperledger/besu",
     "docs": "https://besu.hyperledger.org/en/stable/"
   },
@@ -40,7 +40,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/dappnode/DAppNodePackage-Besu"
+    "url": "https://github.com/dappnode/DAppNodePackage-Besu.git"
   },
   "license": "Apache-2.0"
 }
