@@ -50,6 +50,7 @@ fields:
       - FAST
       - FULL
       - X_SNAP
+      - X_CHECKPOINT
     required: true
     if: { "config_mode": { "enum": ["advanced"] } }
   - title: Enable WebSocket API
