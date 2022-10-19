@@ -9,7 +9,7 @@ fields:
     target:
       type: environment
       name: CONFIG_MODE
-      service: node
+      service: besu
     enum:
       - "normal"
       - "advanced"
@@ -26,7 +26,7 @@ fields:
     target:
       type: environment
       name: STORAGE_FORMAT
-      service: node
+      service: besu
     enum:
       - BONSAI
       - FOREST
@@ -45,7 +45,7 @@ fields:
     target:
       type: environment
       name: SYNC_MODE
-      service: node
+      service: besu
     enum:
       - FAST
       - FULL
@@ -60,7 +60,7 @@ fields:
     target:
       type: environment
       name: WS_ENABLED
-      service: node
+      service: besu
     enum:
       - "true"
       - "false"

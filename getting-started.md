@@ -1,6 +1,6 @@
-## Besu (Execution Client)
+## Goerli Besu (Execution Client)
 
-Welcome to the Merged Besu Ethereum Mainnet Consensus Layer Client
+Welcome to your Post Besu Execution Layer Client
 
 There are now two RPC APIs in Execution Clients:
 

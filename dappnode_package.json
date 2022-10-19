@@ -42,5 +42,11 @@
     "type": "git",
     "url": "https://github.com/dappnode/DAppNodePackage-Besu.git"
   },
-  "license": "Apache-2.0"
+  "license": "Apache-2.0",
+  "globalEnvs": [
+    {
+      "envs": ["CONSENSUS_CLIENT_MAINNET"],
+      "services": ["besu"]
+    }
+  ]
 }
