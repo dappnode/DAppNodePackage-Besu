@@ -72,5 +72,5 @@ fields:
     target:
       type: environment
       name: MAX_HTTP_CONNECTIONS
-      service: besu.public.dappnode.eth
+      service: besu
     if: { "config_mode": { "enum": ["advanced"] } }
