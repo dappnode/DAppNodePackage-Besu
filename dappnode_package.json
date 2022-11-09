@@ -1,5 +1,5 @@
 {
-  "name": "besu.dnp.dappnode.eth",
+  "name": "besu.public.dappnode.eth",
   "version": "1.2.1",
   "description": "An enterprise-grade Java-based, Apache 2.0 licensed Ethereum Execution Layer client",
   "shortDescription": "Java-based Ethereum Client",
@@ -30,8 +30,8 @@
     }
   ],
   "links": {
-    "endpoint": "http://besu.dappnode:8545",
-    "apiEngine": "http://besu.dapppnode:8551",
+    "endpoint": "http://besu.public.dappnode:8545",
+    "apiEngine": "http://besu.public.dapppnode:8551",
     "homepage": "https://github.com/hyperledger/besu",
     "docs": "https://besu.hyperledger.org/en/stable/"
   },
