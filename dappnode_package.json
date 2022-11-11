@@ -15,6 +15,9 @@
   "categories": ["Blockchain"],
   "architectures": ["linux/amd64", "linux/arm64"],
   "chain": "ethereum",
+   "requirements": {
+    "minimumDappnodeVersion": "0.2.60"
+  },
   "exposable": [
     {
       "name": "Besu JSON RPC",
