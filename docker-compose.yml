@@ -1,6 +1,6 @@
 version: "3.5"
 services:
-  node:
+  besu:
     build:
       context: build
       args:
@@ -19,7 +19,7 @@ services:
       MAX_HTTP_CONNECTIONS: "170"
       P2P_PORT: "30414"
       BESU_OPTS: ""
-    image: "node.besu.dnp.dappnode.eth:1.2.1"
+    image: "besu.besu.public.dappnode.eth:1.2.1"
     restart: unless-stopped
 volumes:
   data: {}
