@@ -3,7 +3,7 @@
   "version": "1.2.1",
   "description": "An enterprise-grade Java-based, Apache 2.0 licensed Ethereum Execution Layer client",
   "shortDescription": "Java-based Ethereum Client",
-  "upstreamVersion": "22.10.0",
+  "upstreamVersion": "22.10.2",
   "upstreamRepo": "hyperledger/besu",
   "upstreamArg": "UPSTREAM_VERSION",
   "type": "service",
@@ -15,7 +15,7 @@
   "categories": ["Blockchain"],
   "architectures": ["linux/amd64", "linux/arm64"],
   "chain": "ethereum",
-   "requirements": {
+  "requirements": {
     "minimumDappnodeVersion": "0.2.60"
   },
   "exposable": [
