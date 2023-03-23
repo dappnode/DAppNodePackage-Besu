@@ -22,7 +22,7 @@ fields:
       You can read about the differences [here](https://besu.hyperledger.org/en/stable/Concepts/Data-Storage-Formats). 
 
 
-      Standard is BONSAI.
+      Default storage format is BONSAI.
     target:
       type: environment
       name: STORAGE_FORMAT
@@ -35,13 +35,13 @@ fields:
   - title: Sync Mode
     id: sync_mode
     description: >-
-      Besu can use one of three sync modes, FULL (slow, archive node), FAST (fast, full node) or X_SNAP (fastest, experimental and works with BONSAI). 
+      Besu can use one of three sync modes, FULL (slow, archive node), FAST (fast, full node), X_SNAP (faster, experimental and works with BONSAI), and X_CHECKPOINT (Fastest, and latest sync method works with BONSAI). 
 
 
       You can read about the differences [here](https://besu.hyperledger.org/en/stable/Reference/CLI/CLI-Syntax/#sync-mode). 
 
 
-      Standard is FULL.
+      Default sync mode is FAST.
     target:
       type: environment
       name: SYNC_MODE
