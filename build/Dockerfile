@@ -6,13 +6,13 @@ COPY security /security
 COPY entrypoint.sh /usr/local/bin/entrypoint.sh
 
 USER root
-RUN apt update && apt install curl -y
+
+# curl install throws error in ARM64 arch. It should not prevent build
+RUN apt update && apt install -y curl || true
 
 RUN mkdir /var/lib/besu
 RUN chown -R besu:besu /var/lib/besu
 
 USER besu
-
-ENV BESU_OPTS=$BESU_OPTS
 
 ENTRYPOINT ["/usr/local/bin/entrypoint.sh"]
