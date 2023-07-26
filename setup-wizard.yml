@@ -38,19 +38,19 @@ fields:
       Besu can use one of three sync modes, FULL (slow, archive node), FAST (fast, full node), X_SNAP (faster, experimental and works with BONSAI), and X_CHECKPOINT (Fastest, and latest sync method works with BONSAI). 
 
 
-      You can read about the differences [here](https://besu.hyperledger.org/en/stable/Reference/CLI/CLI-Syntax/#sync-mode). 
+      You can read about the differences [here](https://besu.hyperledger.org/stable/public-networks/get-started/connect/sync-node). 
 
 
-      Default sync mode is FAST.
+      Default sync mode is X_CHECKPOINT.
     target:
       type: environment
       name: SYNC_MODE
       service: besu
     enum:
+      - X_CHECKPOINT
       - FAST
       - FULL
       - X_SNAP
-      - X_CHECKPOINT
     required: true
     if: { "config_mode": { "enum": ["advanced"] } }
   - title: Enable WebSocket API
