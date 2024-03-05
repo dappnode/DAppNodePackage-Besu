@@ -13,7 +13,7 @@ services:
     environment:
       EXTRA_OPTS: ""
       STORAGE_FORMAT: BONSAI
-      SYNC_MODE: X_CHECKPOINT
+      SYNC_MODE: SNAP
       CONFIG_MODE: normal
       WS_ENABLED: "true"
       MAX_HTTP_CONNECTIONS: "170"
