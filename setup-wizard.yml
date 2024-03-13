@@ -20,7 +20,6 @@ fields:
 
       You can read about the differences [here](https://besu.hyperledger.org/en/stable/Concepts/Data-Storage-Formats). 
 
-
       Default storage format is BONSAI.
     target:
       type: environment
@@ -36,13 +35,12 @@ fields:
     description: >-
       Besu can use one of four sync modes
         - FULL (slowest, full archive node) 
-        - FAST (legacy fast sync (not actually fast), full node)
+        - FAST (legacy fast sync (not actually fast, and soon will be impossible to sync in this mode its too slow for mainnet), full node)
         - SNAP (Default, fastest)
         - CHECKPOINT (Latest, faster then SNAP by ~1hour)
 
-        There are 2 Other soon to be deprecated experimental modes X_SNAP and X_CHECKPOINT both of which have been supplanted by their stable versions, please change to the non experimental versions soon or you may require a resync later.
+      There are 2 Other soon to be deprecated experimental modes X_SNAP and X_CHECKPOINT both of which have been supplanted by their stable versions, please change to the non experimental versions soon or you may require a resync later.
         
-
       You can read about the differences [here](https://besu.hyperledger.org/stable/public-networks/get-started/connect/sync-node). 
 
       Default sync mode is SNAP.
@@ -60,19 +58,6 @@ fields:
     required: true
     default: SNAP
     if: { "config_mode": { "enum": ["advanced"] } }
-  - title: Enable WebSocket API
-    id: enable_ws
-    description: >-
-      You can enable or disable the WebSocket API here, if needed.
-    target:
-      type: environment
-      name: WS_ENABLED
-      service: besu
-    enum:
-      - "true"
-      - "false"
-    default: "true"
-    required: true
   - title: Max HTTP RPC connections
     id: max_rpc_connections_http
     description: >-
