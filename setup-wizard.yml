@@ -44,9 +44,7 @@ fields:
         There are 2 Other soon to be deprecated experimental modes X_SNAP and X_CHECKPOINT both of which have been supplanted by their stable versions, please change to the non experimental versions soon or you may require a resync later.
         
 
-
       You can read about the differences [here](https://besu.hyperledger.org/stable/public-networks/get-started/connect/sync-node). 
-
 
       Default sync mode is SNAP.
     target:

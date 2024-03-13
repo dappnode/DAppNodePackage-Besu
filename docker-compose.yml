@@ -15,7 +15,6 @@ services:
       STORAGE_FORMAT: BONSAI
       SYNC_MODE: SNAP
       CONFIG_MODE: normal
-      WS_ENABLED: "true"
       MAX_HTTP_CONNECTIONS: "170"
       P2P_PORT: "30414"
       BESU_OPTS: ""
