@@ -18,7 +18,6 @@ fields:
     description: >-
       Besu can use one of two storage formats, Bonsai Tries or the soon to be deprecated Forest of Tries. 
 
-
       You can read about the differences [here](https://besu.hyperledger.org/en/stable/Concepts/Data-Storage-Formats). 
 
 
