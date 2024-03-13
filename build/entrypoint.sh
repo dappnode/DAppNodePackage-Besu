@@ -37,7 +37,7 @@ else
 fi
 
 exec besu --rpc-ws-host='0.0.0.0' \
-  --rpc-ws-enabled=$WS_ENABLED \
+  --rpc-ws-enabled=true \
   --rpc-http-host='0.0.0.0' \
   --rpc-http-enabled=true \
   --host-allowlist=* \
