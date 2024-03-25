@@ -57,7 +57,7 @@ Note: SNAP sync and CHECKPOINT sync are the fastest modes, checkpoint being fast
       - FAST
       - FULL
     required: true
-    default: SNAP
+    default: CHECKPOINT
   - title: Max HTTP RPC connections
     id: max_rpc_connections_http
     description: >-
