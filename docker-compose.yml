@@ -4,12 +4,12 @@ services:
     build:
       context: build
       args:
-        UPSTREAM_VERSION: 24.3.0
+        UPSTREAM_VERSION: 24.3.3
     ports:
-      - "30414:30414/tcp"
-      - "30414:30414/udp"
+      - 30414:30414/tcp
+      - 30414:30414/udp
     volumes:
-      - "data:/var/lib/besu"
+      - data:/var/lib/besu
     environment:
       EXTRA_OPTS: ""
       STORAGE_FORMAT: BONSAI
@@ -19,9 +19,9 @@ services:
       MAX_HTTP_CONNECTIONS: "170"
       P2P_PORT: "30414"
       BESU_OPTS: ""
-    image: "besu.besu.public.dappnode.eth:1.2.1"
+    image: besu.besu.public.dappnode.eth:1.2.1
     restart: unless-stopped
     security_opt:
-      - "seccomp:unconfined"
+      - seccomp:unconfined
 volumes:
   data: {}
