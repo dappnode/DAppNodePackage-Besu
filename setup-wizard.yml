@@ -27,6 +27,7 @@ fields:
     enum:
       - BONSAI
       - FOREST
+    default: BONSAI
     required: true
     if: { "config_mode": { "enum": ["advanced"] } }
   - title: Sync Mode
@@ -38,7 +39,7 @@ fields:
         - SNAP (Default, 2nd fastest mode)
         - CHECKPOINT (Latest, faster then SNAP by ~1hour cannnot relay full chain history to peers.)
 
-      Note: SNAP sync and CHECKPOINT sync are the fastest modes, CHECKPOINT being faster by roughly 1 hour.  Both modes sync quickly but the primary difference is that CHECKPOINT begins syncing near the head from a preset checkpoint block in the genesis file, and then fills in the historical blocks and necessary state info, while SNAP begins at genesis and starts downloading all trie and leaves info then executes it locally to calculate the chain. ALSO that CHECKPOINT cannot serve the full chain history to peers.
+      Note: SNAP sync and CHECKPOINT sync are the fastest modes, CHECKPOINT being faster by roughly 1 hour.  Both modes sync quickly but the primary difference is that CHECKPOINT begins syncing near the head from a preset checkpoint block in the genesis file, and then fills in the historical blocks and necessary state info, while SNAP begins at genesis and starts downloading all trie and leaves info then executes it locally to calculate the chain. Also CHECKPOINT cannot serve the full chain history to peers.
         
       You can read about the differences [here](https://besu.hyperledger.org/stable/public-networks/get-started/connect/sync-node). 
 
