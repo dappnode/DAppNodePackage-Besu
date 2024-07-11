@@ -38,7 +38,7 @@ fields:
         - SNAP (Upstream Client Default, 2nd fastest mode)
         - CHECKPOINT (New Dappnode Default Mode, Latest, faster then SNAP by ~1hour)
 
-Note: SNAP sync and CHECKPOINT sync are the fastest modes, checkpoint being faster by roughly 1 hour.  Both modes sync quickly but the primary difference is that CHECKPOINT begins syncing near the head from a preset checkpoint block in the genesis file, and then fills in the historical blocks and necessary state info, while SNAP begins at genesis and starts downloading all trie and leaves info then executes it locally to calculate the chain.
+      Note: SNAP sync and CHECKPOINT sync are the fastest modes, CHECKPOINT being faster by roughly 1 hour.  Both modes sync quickly but the primary difference is that CHECKPOINT begins syncing near the head from a preset checkpoint block in the genesis file, and then fills in the historical blocks and necessary state info, while SNAP begins at genesis and starts downloading all trie and leaves info then executes it locally to calculate the chain. ALSO that CHECKPOINT cannot serve the full chain history to peers.
 
       There are 2 Other soon to be deprecated experimental modes X_SNAP and X_CHECKPOINT both of which have been supplanted by their stable versions, please change to the non-experimental versions soon or you may require a resync later.
         
