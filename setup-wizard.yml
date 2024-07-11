@@ -16,12 +16,9 @@ fields:
   - title: Storage Format
     id: storage_format
     description: >-
-      Besu can use one of two storage formats, Forest of Tries or Bonsai Tries. 
-
-
+      Besu can use one of two storage formats, Bonsai Tries or the soon to be deprecated Forest of Tries. 
       You can read about the differences [here](https://besu.hyperledger.org/en/stable/Concepts/Data-Storage-Formats). 
-
-
+      It is strongly discouraged to choose Forest of Tries for a new node.  
       Default storage format is BONSAI.
     target:
       type: environment
@@ -35,36 +32,28 @@ fields:
   - title: Sync Mode
     id: sync_mode
     description: >-
-      Besu can use one of three sync modes, FULL (slow, archive node), FAST (fast, full node), X_SNAP (faster, experimental and works with BONSAI), and X_CHECKPOINT (Fastest, and latest sync method works with BONSAI). 
+      Besu can use one of four sync modes
+        - FULL (slowest, full archive node) 
+        - FAST (legacy, fast sync soon will be impossible to sync as it's too slow for mainnet)
+        - SNAP (Default, 2nd fastest mode)
+        - CHECKPOINT (Latest, faster then SNAP by ~1hour cannnot relay full chain history to peers.)
 
-
+      Note: SNAP sync and CHECKPOINT sync are the fastest modes, CHECKPOINT being faster by roughly 1 hour.  Both modes sync quickly but the primary difference is that CHECKPOINT begins syncing near the head from a preset checkpoint block in the genesis file, and then fills in the historical blocks and necessary state info, while SNAP begins at genesis and starts downloading all trie and leaves info then executes it locally to calculate the chain. ALSO that CHECKPOINT cannot serve the full chain history to peers.
+        
       You can read about the differences [here](https://besu.hyperledger.org/stable/public-networks/get-started/connect/sync-node). 
 
-
-      Default sync mode is X_CHECKPOINT.
+      Default sync mode is now SNAP.
     target:
       type: environment
       name: SYNC_MODE
       service: besu
     enum:
-      - X_CHECKPOINT
+      - SNAP
+      - CHECKPOINT
       - FAST
       - FULL
-      - X_SNAP
     required: true
-    if: { "config_mode": { "enum": ["advanced"] } }
-  - title: Enable WebSocket API
-    id: enable_ws
-    description: >-
-      You can enable or disable the WebSocket API here, if needed.
-    target:
-      type: environment
-      name: WS_ENABLED
-      service: besu
-    enum:
-      - "true"
-      - "false"
-    required: true
+    default: SNAP
   - title: Max HTTP RPC connections
     id: max_rpc_connections_http
     description: >-
