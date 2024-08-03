@@ -18,7 +18,7 @@ services:
       MAX_HTTP_CONNECTIONS: "170"
       P2P_PORT: "30414"
       BESU_OPTS: ""
-    image: besu.besu.public.dappnode.eth:1.2.1
+    image: besu.besu.public.dappnode.eth:1.2.11
     restart: unless-stopped
     security_opt:
       - seccomp:unconfined
